@@ -16,6 +16,6 @@ The **completed** Unity projects for each example can be found in their own repo
 - https://github.com/dr-matt-smith/unity-cookbook-2023-ch02-09-interactive-UI-text-input
 - https://github.com/dr-matt-smith/unity-cookbook-2023-ch02-10-toggles-and-radio-button-groups
 - https://github.com/dr-matt-smith/unity-cookbook-2023-ch02-11-text-and-icon-dropdown-menus
-- https://github.com/dr-matt-smith/unity-cookbook-2023-ch02-12-images-in-dropdown-menus
-- https://github.com/dr-matt-smith/unity-cookbook-2023-ch02-13-radar-showing-gameobject-relative-positions
+- https://github.com/dr-matt-smith/unity-cookbook-2023-ch02-11b-images-in-dropdown-menus
+- https://github.com/dr-matt-smith/unity-cookbook-2023-ch02-12-radar-showing-gameobject-relative-positions
 
