@@ -1,14 +1,14 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class DropdownManager : MonoBehaviour 
 {
-    private Dropdown dropdown;
+    private TMP_Dropdown dropdown;
 
     // cache a reference to the parent GameObjects Dropdown component
     private void Awake()
     {
-        dropdown = GetComponent<Dropdown>();
+        dropdown = GetComponent<TMP_Dropdown>();
     }
 
     // retreive and print out the current value of the dropdown
