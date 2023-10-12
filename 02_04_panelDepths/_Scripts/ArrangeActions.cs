@@ -15,12 +15,15 @@ public class ArrangeActions : MonoBehaviour
 	// so it is drawn sooner, and so 'below' the next UI object to be drawn
 	public void MoveDownOne()
 	{
-		print ("(before change) " + gameObject.name +  " sibling index = " + panelRectTransform.GetSiblingIndex());
+		print("(before change) " + gameObject.name + " sibling index = " + panelRectTransform.GetSiblingIndex());
 
 		int currentSiblingIndex = panelRectTransform.GetSiblingIndex();
-		panelRectTransform.SetSiblingIndex( currentSiblingIndex - 1 );
+		if (currentSiblingIndex > 0)
+		{
+			panelRectTransform.SetSiblingIndex(currentSiblingIndex - 1);
+		}
 
-		print ("(after change) " + gameObject.name +  " sibling index = " + panelRectTransform.GetSiblingIndex());
+		print("(after change) " + gameObject.name + " sibling index = " + panelRectTransform.GetSiblingIndex());
 	}
 	
 	//------------------------------
@@ -31,8 +34,12 @@ public class ArrangeActions : MonoBehaviour
 		print ("(before change) " + gameObject.name +  " sibling index = " + panelRectTransform.GetSiblingIndex());
 		
 		int currentSiblingIndex = panelRectTransform.GetSiblingIndex();
-		panelRectTransform.SetSiblingIndex( currentSiblingIndex + 1 );
-		
+		int maxSiblingIndex = panelRectTransform.childCount - 1;
+		if (currentSiblingIndex < maxSiblingIndex)
+		{
+			panelRectTransform.SetSiblingIndex(currentSiblingIndex + 1);
+		}
+
 		print ("(after change) " + gameObject.name +  " sibling index = " + panelRectTransform.GetSiblingIndex());
 	}
 }
